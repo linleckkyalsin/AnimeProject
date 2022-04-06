@@ -1,0 +1,263 @@
+
+@media screen and (max-width: 1599px)
+{.container {
+    padding-left: 15px;
+}}
+
+@media screen and (max-width: 1599px)
+{#wrapper, .container {
+    max-width: 100%;
+}
+.container {
+    max-width: 1800px;
+    width: 100%;
+}}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 30px;
+
+}
+
+.main-content{
+    width: 70%;
+    float: left;
+}
+.main-sidebar{
+    width: 30%;
+    float: right;
+    padding-left:30px;
+}
+.block_area {
+    display: flex;
+   
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+@media (max-width: 800px) {
+    .flw-item{
+  
+        width: 100%;
+       
+     }
+    .film_list-wrap{
+        display: flex;
+       
+        flex-direction:column;
+
+  }
+  .main-content{
+    width: 100%;
+    float: left;
+}
+.main-sidebar{
+    width: 100%;
+    float: left;
+}
+
+  .film-poster{
+      width: 100%;
+  }
+
+}
+  
+  
+.block_area-header {
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+.list-heading{
+   
+    float: left;
+}
+.cat-heading {
+    font-size: 22px!important;
+    line-height: 40px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: #faa300;
+}
+
+.view-more{
+    float: right;
+  
+}
+.txt{
+   
+    color: #aaa;
+   padding-right: 80px;
+    font-size: 12px;
+ 
+
+}
+.block_area-content{
+
+    display: block;
+    
+}
+.film_list-wrap {
+   
+    margin: 0 -7px;
+    list-style: none;
+    padding: 0;
+}
+.flw-item{
+  
+   width: 20%;
+  
+}
+.film_list-wrap .flw-item {
+
+    margin-left:30px;
+    margin-bottom:30px;
+    float: left;
+    background: #2a2c31;
+    border-radius: 0;
+    position: relative;
+}
+
+.film-poster {
+  
+   
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 148%;
+    position: relative;
+  
+    background-position:center;
+}
+.film-detail {
+    color: #aaa;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    min-height: 84px;
+}
+.film_list .film_list-wrap .flw-item .film-detail .film-name {
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 8px;
+    height: 37px;
+    /* display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; */
+    overflow: hidden;
+}
+/* .film_list .film_list-wrap .flw-item .film-detail .fd-infor {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+} */
+/* .film-poster img{
+    width: 100%;
+    height: 100%;
+} */
+.film_list .film_list-wrap .flw-item .film-detail {
+    color: #aaa;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    min-height: 84px;
+}
+.film_list .film_list-wrap {
+    margin: 0 -7px;
+    list-style: none;
+    padding: 0;
+}
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.3);
+    display: inline-block;
+    margin: 3px 6px;
+}
+.film-detail {
+    color: #aaa;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    min-height: 84px;
+}
+
+.film-poster-img{
+ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+/* .film_list-wrap:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #2a2c31;
+    background: -moz-linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+    background: -webkit-linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+    background: linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+} */
+.film-poster:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: #2a2c31;
+    background: -moz-linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+    background: -webkit-linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+    background: linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+}
+.tick{
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    left: 10px;
+}
+.tick-dub{
+    margin-right: 2px;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: 600;
+    display: inline-block;
+    line-height: 1.2em;
+    padding: 2px 4px;
+    border-radius: 5px;
+    background:  #dc3545;
+    color: #111;
+    color: #fff;
+}
+.cbox.cbox-genres {
+    padding: 15px;
+    background: #2a2c31;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.cbox {
+    background: #4a4b51;
+    padding: 20px;
+}

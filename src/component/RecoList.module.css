@@ -1,0 +1,146 @@
+.container {
+    margin-top: 100px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.main-content {
+    width: 75%;
+    float: left;
+}
+
+.block_area {
+    display: block;
+    margin-bottom: 30px;
+}
+.block_area-header {
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+.bah-heading{
+ 
+}
+.cat-heading{
+    font-size: 22px!important;
+    line-height: 40px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: #faa300;
+}
+.main-sidebar {
+   
+    width: 25%;
+    float: right;
+  
+}
+.cbox {
+
+
+    
+    background: #2a2c31;
+}
+.cbox-content {
+    position: relative;
+    padding: 15px 10px;
+}
+ .ulclear {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+cbox-ul{
+    position: relative;
+    
+    margin: 0;
+    overflow: hidden;
+}
+ .film-poster {
+   
+        width: 45px;
+        
+        padding-bottom: 60px;
+        border-radius: 3px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2px;
+        z-index: 2;
+}
+.film-poster-img {
+ position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.film-detail {
+    padding-left: 50px;
+    font-size: 12px;
+    line-height: 1.2em;
+    min-height: 60px;
+    color: #ddd;
+    position: relative;
+    z-index: 2;
+    margin-left: 12px;
+}
+.film-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-bottom: 5px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.fd-infor {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.3);
+    display: inline-block;
+    margin: 3px 6px;
+}
+li {
+
+ position: relative;
+ padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+ .film-fav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #aaa;
+    z-index: 100;
+  
+  
+}
+@media screen and (max-width: 1199px)
+{.main-content, .main-sidebar {
+    
+    width: 100%;
+    padding: 0;
+}
+.container{
+    margin-top: 300px;
+}
+}

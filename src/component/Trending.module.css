@@ -1,0 +1,243 @@
+.s-container{
+    background: #202125;
+    
+    z-index: 1;
+    position: relative;
+    display: block;
+    padding-right: 0;
+    width: 100%;
+   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+}
+.swipe-slider{
+    
+    position: relative;
+    overflow: hidden;
+   height: 90vh;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    
+}
+.swipe-slider:after {
+      content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #202125;
+    background: -moz-linear-gradient(90deg,#202125 0,rgba(32,33,37,.6) 40%,rgba(32,33,37,0) 60%,rgba(32,33,37,0) 80%,#202125 100%);
+    background: -webkit-linear-gradient(90deg,#202125 0,rgba(32,33,37,.6) 40%,rgba(32,33,37,0) 60%,rgba(32,33,37,0) 80%,#202125 100%);
+    background: linear-gradient(90deg,#202125 0,rgba(32, 33, 37, 0.048) 40%,rgba(32,33,37,0) 60%,rgba(32,33,37,0) 80%,#202125 100%);
+   
+    
+}
+.con::after{
+    content: "";
+    z-index: 2;
+    position: absolute;
+
+    top: 60%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #202125;
+    background: -moz-linear-gradient(to top,#202125 ,transparent );
+    background: -webkit-linear-gradient(to top,#202125 ,transparent);
+    background: linear-gradient(to top,#202125 ,transparent);
+   
+    
+}
+
+.item-content{
+    max-width: 800px;
+    position: absolute;
+    top: 10vh;
+    
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    padding: 30px;
+}
+
+.des-heading img{
+    width: 50%;
+    
+    display: block;
+    height: 50%;
+    margin: 10px 35px 10px 60px;
+    float: left;
+}
+.des-titleinfo{
+  padding-left: 30px;
+   font-size: 30px;
+   line-height: 1.1em;
+   font-weight: 600;
+   margin-bottom: 20px;
+   max-height: 132px;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+}
+.anime-des{
+    padding-left: 30px;
+    margin-top:12px ;
+    font-size: 14px;
+    line-height: 1.6em;
+    font-weight: 300;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: left;
+    width: 80%;
+}
+
+
+.btn-primary{
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 30px;
+    padding: 12px;
+    border: none;
+    background: #faa300!important;
+    color: #111!important;
+    border-color: #faa300!important;
+}
+.btn-secondary{
+    background: #4a4b51!important;
+    border-color: #4a4b51!important;
+    color: #fff;
+    border: none;
+    margin-left: 12px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 12px;
+}
+.anime-detail{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 30px;
+}
+.series-item{
+    display: inline-block;
+    overflow: hidden;
+    
+}
+.series-item svg{
+    font-size: .8em;
+    position: relative;
+    
+    margin-right: 8px;
+}
+.series-type{
+    
+    padding-left: 12px;
+    font-size: .8em;
+}
+.quality{
+    display: inline-block;
+    padding: 3px 4px;
+    background: #faa300;
+    color: #111;
+    border-radius: 5px;
+    line-height: 1em;
+    font-weight: 600;
+    font-size: 12px
+}
+.qualitysd{
+    display: inline-block;
+    padding: 3px 4px;
+    background: #fff;
+    color: #111;
+    border-radius: 5px;
+    line-height: 1em;
+    font-weight: 600;
+    font-size: 12px;
+}
+div{
+    display: block;
+}
+.swipe-item{
+    width: 100%;
+    height: 100%;
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.swipe-cover{
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.swipe-image{
+
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: blur(0px);
+    
+}
+@media screen and (max-width: 1400px)
+{.s-container {
+   height: 90vh;
+}}
+.slide-detail{
+  
+
+     
+       
+    
+}
+.nbtn{
+    position:absolute;
+    bottom: 0;
+    right:0;
+    z-index: 1;
+    margin-top: 2px;
+   
+}
+.pbtn{
+position: absolute;
+z-index: 1;
+bottom: 10%;
+right: 0;
+
+}
+.nbtn, .pbtn{
+   
+        background: #2a2b31;
+        color: #fff;
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 6px;
+        display: inline-block;
+        margin: 3px 0;
+       
+        
+
+     
+   
+    
+}

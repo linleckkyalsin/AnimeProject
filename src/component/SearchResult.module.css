@@ -1,0 +1,206 @@
+.search-result-pop{
+    background: #414248;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 30%);
+    position: absolute;
+    left: 0;
+    top: 33px;
+    right: 0;
+    z-index: 6;
+    list-style: none;
+    
+}
+
+.nav-item-bottom{
+    padding: 15px;
+    background: #faa300!important;
+    font-size: 16px;
+    color: #111;
+    
+    border-bottom: none;
+    display: block;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px dashed #5c5d63;
+  
+    text-align: center;
+  }
+  .nav-item-bottom:hover{
+      color: #5c5d63;
+  }
+
+.nav-item {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 26px;
+    padding-top: 10px;
+    width: 100%;
+
+    position: relative;
+    border-bottom: 1px dashed #5c5d63;
+}  
+
+.nav-item:hover{
+    background-color: #5c5d63;
+}
+.search-result-pop .nav-item .film-poster {
+    float: left;
+    width: 50px;
+    padding-bottom: 70px;
+}
+.film-poster {
+    width: 100%;
+    padding-bottom: 148%;
+    position: relative;
+    overflow: hidden;
+   
+}
+.film-poster .film-poster-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.film-detail{
+    padding-left: 65px;
+    padding-top: 0.2rem;
+    font-size: 12px;
+}
+.film-name{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2em;
+    max-width: 100%;
+    margin-bottom: 8px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 600;
+}
+.film-infor{
+
+}
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.3);
+    display: inline-block;
+    margin: 3px 6px;
+}
+.loading-relative {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 50px;
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.loading>div {
+    width: 18px;
+    height: 18px;
+    background-color: #aaa;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation:1.4s infinite ease-in-out both;
+    animation:  1.4s infinite ease-in-out both;
+}
+.span1 {
+    -webkit-animation-delay: -.32s;
+    animation-delay: -.32s;
+}
+.loading .span2 {
+    -webkit-animation-delay: -.16s;
+    animation-delay: -.16s;
+}
+.dot-pulse {
+    position: absolute;
+    top: 50%;
+ 
+    transform: translate(-50%,-50%);
+
+    left: -9850px;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #aaa;
+    color: #aaa;
+    box-shadow: 9999px 0 0 -5px #aaa;;
+    animation: dotPulse 1.5s infinite linear;
+    animation-delay: .25s;
+  }
+  
+  .dot-pulse::before, .dot-pulse::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #aaa;;
+    color: #aaa;
+  }
+  
+  .dot-pulse::before {
+    box-shadow: 9984px 0 0 -5px #aaa;
+    animation: dotPulseBefore 1.5s infinite linear;
+    animation-delay: 0s;
+  }
+  
+  .dot-pulse::after {
+    box-shadow: 10014px 0 0 -5px #aaa;
+    animation: dotPulseAfter 1.5s infinite linear;
+    animation-delay: .5s;
+  }
+  
+  @keyframes dotPulseBefore {
+    0% {
+      box-shadow: 9984px 0 0 -5px #aaa;
+    }
+    30% {
+      box-shadow: 9984px 0 0 2px #aaa;
+    }
+    60%,
+    100% {
+      box-shadow: 9984px 0 0 -5px #aaa;
+    }
+  }
+  
+  @keyframes dotPulse {
+    0% {
+      box-shadow: 9999px 0 0 -5px #aaa;
+    }
+    30% {
+      box-shadow: 9999px 0 0 2px#aaa;
+    }
+    60%,
+    100% {
+      box-shadow: 9999px 0 0 -5px #aaa;
+    }
+  }
+  
+  @keyframes dotPulseAfter {
+    0% {
+      box-shadow: 10014px 0 0 -5px #aaa;
+    }
+    30% {
+      box-shadow: 10014px 0 0 2px #aaa;
+    }
+    60%,
+    100% {
+      box-shadow: 10014px 0 0 -5px #aaa;
+    }
+  }
+  

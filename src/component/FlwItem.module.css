@@ -1,0 +1,331 @@
+
+@media screen and (max-width: 1599px)
+{.container {
+    padding-left: 15px;
+}}
+
+@media screen and (max-width: 1599px)
+{#wrapper, .container {
+    max-width: 100%;
+}
+.container {
+    max-width: 1800px;
+    width: 100%;
+}}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 30px;
+
+}
+.main-content{
+    width: 75%;
+    float: left;
+  
+}
+.main-sidebar{
+    margin-top: 10px;
+    width: 25%;
+    float: right;
+    padding-left:30px;
+   
+}
+.block-area{
+ 
+    display:block;
+    margin-bottom: 30px;
+    position: relative;
+  
+}
+
+.block-area .block-area-header {
+    margin-bottom: 15px;
+    display: block;
+    width: 100%;
+}
+.film_list {
+    display: block;
+}
+.film_list .film_list-wrap {
+   
+    list-style: none;
+    padding: 0;
+}
+.film_list .film_list-wrap .flw-item {
+    width: calc(24.66% - 14px);
+    margin: 0 7px 14px;
+    float: left;
+    background: #2a2c31;
+    border-radius: 0;
+    position: relative;
+}
+.film_list .film_list-wrap .flw-item .film-poster {
+    border-radius: 0;
+    padding-bottom: 130%;
+}
+.film-poster {
+    width: 100%;
+    padding-bottom: 148%;
+    position: relative;
+    overflow: hidden;
+}
+.film_list .film_list-wrap .flw-item .film-detail {
+    color: #aaa;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    min-height: 84px;
+}
+.film-poster .film-poster-img, .item-cover-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.film_list .film_list-wrap .flw-item .film-poster:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  
+    
+    background: #2a2c31;
+    background: -moz-linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+    background: -webkit-linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+    background: linear-gradient(0deg,#2a2c31 0,rgba(42,44,49,0) 76%);
+}
+.anime-head{
+float: left;
+}
+
+.cat-head{
+    font-size: 22px!important;
+    line-height: 40px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: #faa300;
+    
+}
+
+div {
+    display: block;
+}
+.film-name {
+    font-size: 14px;
+    line-height: 1.3em;
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 8px;
+    height: 37px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.film_list .film_list-wrap .flw-item .film-detail .fd-infor {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: rgba(255,255,255,.3);
+        display: inline-block;
+        margin: 3px 6px;
+    }
+
+.block-area-content{
+    margin-top: 5px;
+}
+.cbox{
+    
+    padding: 15px;
+    background: #2a2c31;
+    display: inline-block;
+    width: 100%;
+}
+.genre-list{
+  
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+ul {
+    margin: 0 -1% 0;
+    overflow: hidden;
+}
+.genre-list li:nth-of-type(7n) a {
+    border-color: #86e3ce;
+    color: #86e3ce;
+}
+.genre-list li:nth-of-type(7n+1) a {
+    border-color: #d8b2ab;
+    color: #d8b2ab;
+}
+
+
+.genre-list li:nth-of-type(7n+2) a {
+    border-color: #d0e6a5;
+    color: #d0e6a5;
+
+}
+.genre-list li:nth-of-type(7n+3) a {
+    border-color: #ffdd95;
+    color: #ffdd95;
+}
+.genre-list li:nth-of-type(7n+4) a {
+    border-color: #fc887b;
+    color: #fc887b;
+}
+.genre-list li:nth-of-type(7n+5) a {
+    border-color: #ccabda;
+    color: #ccabda;
+}.genre-list li:nth-of-type(7n+6) a {
+    border-color: #abccd8;
+    color: #abccd8;
+} 
+.cbox ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 9px 15px;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+}
+.cbox ul li a:hover{
+    background-color: #414248
+}
+
+.btn-showmore:hover {
+    background: #4b4c53;
+    text-decoration: none;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+.btn-showmore { 
+    border-radius: 12px;
+    border: none;
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 12px;
+    background: #3d3e44;
+    color: #fff!important;
+    box-shadow: none!important;
+}
+.btn-sm {
+    font-size: 14px;
+}
+.film-poster-ahref {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: inline-block;
+}
+.film-poster-ahref svg {
+    
+   
+    z-index: 2;
+    opacity: 0;
+    color: #fff;
+}
+.film-poster:hover  .overlay {
+    opacity: 1;
+}
+.film-poster:hover  .film-poster-ahref svg {
+    opacity: 1;
+}
+.film-poster-ahref svg:before {
+    content: "\f04b";
+}
+
+.film-poster-ahref svg, .film-poster-ahref:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.flw-item .film-poster .film-poster-ahref:after {
+    content: "";
+    position: absolute;
+    top: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    opacity: 0;
+    background: rgba(32,33,37,.8);
+    z-index: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000f147c;
+  }
+@media (max-width: 800px) {
+    .main-content{
+        float: none;
+        width: 100%;
+        padding: 0;
+       
+    }
+    .main-sidebar{
+        float: none;
+        width: 100%;
+        padding: 0;
+        
+    }
+    .block-area {
+        margin-bottom: 30px;
+    }
+    .film_list {
+        
+        overflow: hidden;
+    }
+    .film_list .film_list-wrap .flw-item {
+        width: calc(33.33% - 14px)!important;
+    }
+}

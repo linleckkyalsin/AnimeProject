@@ -1,0 +1,203 @@
+.main-wrapper {
+    margin-bottom: 40px;
+    min-height: calc(100vh - 350px);
+}
+.container {
+    max-width: 1260px;
+    padding: 0 15px;
+}
+.container {
+    max-width: 1800px;
+    width: 100%;
+}
+.filter-block {
+    
+    margin: 60px 90px 10px;
+}
+.form-controls {
+    display: block;
+    width: 30%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}    
+.form-groups {
+    margin-bottom: 30px;
+}
+.cate-filter, .no-content-block {
+    
+    padding: 30px;
+    height: 90vh;
+    border-radius: 10px 10px 0 0;
+    background: #33353c;
+    background: -moz-linear-gradient(0deg,rgba(51,53,60,0) 0,#33353c 50%,#33353c 100%);
+    background: -webkit-linear-gradient(0deg,rgba(51,53,60,0) 0,#33353c 50%,#33353c 100%);
+    background: linear-gradient(0deg,rgba(51,53,60,0) 0,#33353c 50%,#33353c 100%);
+}
+.cfc-item {
+    margin-bottom: 40px;
+    
+}
+form {
+    
+    display: block;
+    margin-top: 0em;
+}
+.cfc-min-block {
+    
+    position: relative;
+    margin: 0;
+    background: #33353c;
+    margin-bottom: 20px;
+}
+.cate-filter{
+   
+}
+.cfc-min-block .cmb-item {
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #575a64;
+    border-radius: 6px;
+    padding: 3px 10px;
+}
+.ni-head {
+    font-weight: 500;
+    margin-right: 5px;
+    float: left;
+    font-size: 12px;
+    width: auto;
+    display: block;
+    line-height: 32px;
+}
+.ni-headd{
+       margin-top: 90px;
+        font-weight: 500;
+        display: block;
+        margin-bottom: 40px;
+    
+}
+.nl-item {
+    position: relative;
+    display: block;
+    height: 32px;
+    float: left;
+}
+.nli-select {
+    float: left;
+}
+.nli-select .custom-select {
+    font-size: 12px;
+    cursor: pointer;
+    color: #faa300;
+    background: #33353c;
+    border: none;
+    max-width: 140px;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+    line-height: 32px;
+    box-shadow: none!important;
+}
+.custom-select {
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.custom-select {
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    
+    vertical-align: middle;
+   border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.custom-control-input {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 1rem;
+    height: 1.25rem;
+    opacity: 0;
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+.btn-filter-item{
+    min-width: 50px;
+    border-radius: 6px!important;
+    font-size: 12px;
+    line-height: 1em;
+    padding: 8px 10px;
+    float: left;
+    margin: 3px 6px 3px 0;
+    color: #ddd;
+    border: 1px solid #4a4c55;}
+
+
+
+input[type="checkbox"]:checked + label {
+        color: #faa300;
+        font-weight: bold;
+        border: 1px solid #faa300;
+    }
+
+    .cfc-item {
+      
+        margin-bottom: 70px;
+    }
+    .cfc-item .ni-head {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 80px;
+    }
+    .btn-primary{
+        padding: 8px;
+        border: none;
+        background: #faa300!important;
+        color: #111!important;
+        border-color: #faa300!important;
+    }    
+
+     .block_area-header {
+        padding-left: 90px;
+        margin-bottom: 15px;
+        display: block;
+        width: 100%;
+    }
+  .cat-heading {
+       
+        font-size: 22px!important;
+        line-height: 40px;
+        font-weight: 600;
+        
+        color: #faa300;
+    }
+    .block_area-content{
+        padding: 80px;
+    }
