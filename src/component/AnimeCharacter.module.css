@@ -14,12 +14,12 @@
  
 }.slider-cont img{
     display: block;
-    height: 50px;
+    height: 320px;
     margin: 10px 35px 10px 60px;
     float: left;
-    width: 60%;
+    width: 150px;
     transition: all .2s ease-in-out; 
-    height:70%;
+    
 }
 
 .prevBtn{
