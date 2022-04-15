@@ -96,9 +96,9 @@ export default function Trending() {
       
       <div className={classes['swipe-slider']} style={{ backgroundImage: `url(http://127.0.0.1:8000/images/${item.anime.image})` }}>
     <div className={classes['item-content']}>
-      <div className={classes['des-heading']} >
+      {/* <div className={classes['des-heading']} >
        <img className={classes['des-img']} src={`http://127.0.0.1:8000/images/${item.anime.title_img}`} alt='hi' />
-      </div>
+      </div> */}
      <div className={classes['des-titleinfo']}>
      
      {item.anime.name}

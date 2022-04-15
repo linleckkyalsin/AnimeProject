@@ -9,6 +9,22 @@
     z-index: 102;
     padding: 0;
 }
+.login-div{
+    margin-top: 15px ;
+    margin-right: 90px;
+    float:left;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    font-weight: 400;
+ 
+
+        background: #faa300!important;
+        color: #111!important;
+        border-color: #faa300!important;
+}
 @media screen and (max-width:1299px)
 {
     .header-home {
@@ -79,6 +95,7 @@
     display: none;
 }
 .btn-user {
+     margin-top: -39px;
     margin-right: 12px;
     float:right;
     border: none;
@@ -87,8 +104,7 @@
     line-height: 40px;
     padding: 0 15px;
     font-weight: 400;
- 
-    margin: 15px 12px;
+
         background: #faa300!important;
         color: #111!important;
         border-color: #faa300!important;

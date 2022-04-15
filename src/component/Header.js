@@ -113,6 +113,18 @@ useEffect(()=>{
       setSearchIshow(true)
     }
   }
+  const logoutHandler=(e)=>{
+    e.preventDefault();
+         localStorage.removeItem('auth_token');
+        localStorage.removeItem('auth_name')
+    // console.log(localStorage.getItem('auth_token'))
+    // axios.post('/api/logout').then(res=>{
+    //   // if(res.data.status===200){
+    
+    //   // }
+     
+    // })
+ }
 // useEffect(()=>{
   // Axios.get(`/animesearch?search=${searchRef.current.value}`).then((res)=>{
   //   setSearchAnime(res.data.data);
@@ -163,7 +175,14 @@ useEffect(()=>{
                     </div>
             
                     <div className={classes['header_right']}>
-                    
+                    {
+                      localStorage.getItem('auth_token') ?   <div className={classes['login-div']}>
+                      <div onClick={logoutHandler}>Logout</div>
+                    </div> :   <div className={classes['login-div']}>
+                      <div onClick={props.onLoginShow}>Login</div>
+                    </div>
+                    }
+                  
                     <div className={classes['header_right-user']}>
                         <Link to={`/watchList`} className={classes['btn-user']}>
                           {ctx.items.length!==0 ? <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
