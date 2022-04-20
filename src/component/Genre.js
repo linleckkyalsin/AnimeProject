@@ -20,6 +20,11 @@ export default function Genre(props) {
             })
             
           }
+          else if(props.id){
+            Axios.get(`/anime?cast_id=${props.id}`).then((res)=>{
+                setData(res.data.data)
+                  })
+          }
           else{
             Axios.get(api).then((res)=>{
                 setData(res.data.data);
@@ -74,6 +79,16 @@ export default function Genre(props) {
                      }
                     
                  })
+                }
+                {
+                    props.id && props.cast.map((c)=>{
+                     if(c.id==props.id){
+                        return(
+                            <span>{c.name} 's animes ( {data.length} )</span>
+                        )
+                     }
+                    
+                 }) 
                 }
                 
                 </h2>

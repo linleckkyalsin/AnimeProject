@@ -7,7 +7,7 @@ import AddTo from './AddTo';
 export default function FilmList(props) {
     const [isShow,setIsShow]=useState(-1);
     const ctx=useContext(AnimeContext);
-   
+    const [fav,setFav]=useState([]);
     const [AnimeItem,setItem]=useState();
     const showHandler=(ind)=>{
         if(isShow!==-1){
@@ -25,17 +25,29 @@ export default function FilmList(props) {
         // }
         
     }
-    const watchHandler=(ani)=>{
-        ctx.addItem(ani);
-      
+  const watchHandler=(ani)=>{
+    alert('hi')
+  const upFav=[...fav,ani]
+  let array=[];
+  upFav.map((i)=>array.push(i.id))
+  setFav(upFav)
+ 
+  ctx.addItem(ani)
+  localStorage.setItem('favItem'+(ani.id),JSON.stringify(ani))
+        // ctx.addItem(ani);
+
+        // // localStorage.setItem('Favourite',JSON.stringify(array))
+        // localStorage.setItem('favItem'+(ani.id),JSON.stringify(ani))
         
     }
     const holdHandler=(ani)=>{
         ctx.addHold(ani);
+        localStorage.setItem('favItem'+(ani.id),JSON.stringify(ani))
     
     }
     const removeHandler=(ani)=>{
         ctx.removeItem(ani)
+        localStorage.removeItem('favItem'+(ani.id),JSON.stringify(ani))
     }
     console.log(ctx.items)
   return (
@@ -45,7 +57,7 @@ export default function FilmList(props) {
     props.animes.map((anime,ind)=>{
         
         return(
-            <div className={classes['flw-item']}>
+            <Link to={`/detail/${anime.id}`}> <div className={classes['flw-item']}>
             <div className={classes['dr-fav']}>
       <div>
     <AddTo ind={ind} anime={anime}></AddTo>
@@ -86,7 +98,8 @@ export default function FilmList(props) {
 </div>
        </div>
         
-        </div>
+        </div></Link>
+           
         )
     })
 }

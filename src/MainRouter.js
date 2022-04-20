@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import SignUp from './component/Login/SignUp'
+import ActorPage from './component/pages/ActorPage'
 import AnimeDetail from './component/pages/AnimeDetail'
 import AnimeFilter from './component/pages/AnimeFilter'
 import AnimeGenre from './component/pages/AnimeGenre'
@@ -25,6 +26,7 @@ export default function MainRouter() {
         <Route path='/series/:tot' element={<TypeAnime/>}></Route>
         <Route path='/watchList' element={<WatchListPage/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
+        <Route path='/actor/:id' element={<ActorPage/>}></Route>
     </Routes>
   )
 }

@@ -23,7 +23,10 @@ const animeReducer=(state,action)=>{
             if(a.id===action.item.id){
                 a.aniType='watch'
              }
+           
          })  
+           //  localStorage.setItem('Favourite',JSON.stringify(array))
+      //   localStorage.setItem('favItem'+(ani.id),JSON.stringify(ani))
         return{
             items:updatedAnime
         }
@@ -45,7 +48,7 @@ const animeReducer=(state,action)=>{
              if(a.id===action.item.id){
                 a.aniType='hold'
              }
-            
+             localStorage.setItem('favItem'+(a.id),JSON.stringify(a))
          })  
         return{
             items:updatedAnime

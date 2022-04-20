@@ -14,13 +14,14 @@ export default function ViewAllFilterRes(props) {
     //updatedAnime=updatedAnime.filter((item)=>item.name.toLowerCase().search(searchRes.toLowerCase().trim())!==-1)
    
     useEffect(()=>{
-      
+    
         if(props.ani_id){
             Axios.get(`/anime?genre_id=${props.ani_id}`).then((res)=>{
           setData(res.data.data)
             })
             
           }
+         
           else{
             Axios.get(api).then((res)=>{
                 setData(res.data.data);

@@ -1,8 +1,16 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Slider from "react-slick";
 import classes from './Popular.module.css';
 import hai from '../assets/sth.jpg';
+import Axios from '../config/Axios';
 export default function Popular() {
+  const [anime,setAnime]=useState([])
+  useEffect(() => {
+    Axios.get(`/anime`).then((res)=>{
+      setAnime(res.data.data);
+  })
+
+  }, [])
     function SampleNextArrow(props) {
         
         const { className, style, onClick } = props;
@@ -71,48 +79,21 @@ export default function Popular() {
     <div>
     <h2 className={classes['title']}>Trending</h2>
     <Slider {...settings} className={classes['p-container']}>
-      <div className={classes['slider-con']}>
+    {
+      anime.map((ani)=>{
+       return(
+        <div className={classes['slider-con']}>
    
-        <img src={hai} alt='hi'/>
-        <div>
-            <h2 className={classes['trend-name']}>Super DragonBall</h2>
-        </div>
-      </div>
-      <div className={classes['slider-con']}>
-   
-   <img src={hai} alt='hi'/>
-   <div>
-       <h2 className={classes['trend-name']}>Super DragonBall</h2>
-   </div>
+   <img src={`http://127.0.0.1:8000/images/${ani.bg_img}`} alt='hi'/>
+   {/* <div>
+       <h2 className={classes['trend-name']}>{ani.name}</h2>
+   </div> */}
  </div>
- <div className={classes['slider-con']}>
-   
-   <img src={hai} alt='hi'/>
-   <div>
-       <h2 className={classes['trend-name']}>Super DragonBall</h2>
-   </div>
- </div>
- <div className={classes['slider-con']}>
-   
-   <img src={hai} alt='hi'/>
-   <div>
-       <h2 className={classes['trend-name']}>Super DragonBall</h2>
-   </div>
- </div>
- <div className={classes['slider-con']}>
-   
-   <img src={hai} alt='hi'/>
-   <div>
-       <h2 className={classes['trend-name']}>Super DragonBall</h2>
-   </div>
- </div>
- <div className={classes['slider-con']}>
-   
-   <img src={hai} alt='hi'/>
-   <div>
-       <h2 className={classes['trend-name']}>Super DragonBall</h2>
-   </div>
- </div>
+       )
+      })
+    }
+     
+    
     </Slider>
   </div>
   )

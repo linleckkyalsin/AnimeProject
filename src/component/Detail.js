@@ -191,7 +191,7 @@ console.log(u)
                        </div>
                        <div className={classes['item']}>
                            <span className={classes['item-head']}>Release :</span>
-                           <span className={classes['name']}>Scores</span>
+                           <span className={classes['name']}>{props.anime.release_date}</span>
                        </div>
                        <div className={classes['item']}>
                            <span className={classes['item-head']}>Episode :</span>
@@ -219,7 +219,7 @@ console.log(u)
                            <span className={classes['item-head']}>Casts :</span>
                            {props.cast.map((c)=>{
                                return(
-                                <Link to='/' className={classes['genre']}>{c.name}</Link>
+                                <Link to={`/actor/${c.id}`} className={classes['genre']}>{c.name}</Link>
                                )
                         
                            })}

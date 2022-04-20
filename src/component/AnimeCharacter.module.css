@@ -102,3 +102,9 @@
 .slider-cont img:hover{
     transform: scale(1.2);
 }
+@media screen and (max-width:1199px){
+    .a-container{
+        margin-top: 650px;
+        margin-bottom: 0px;
+    }
+}

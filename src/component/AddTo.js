@@ -2,6 +2,7 @@ import {React,useContext,useState} from 'react'
 import classes from './AddTo.module.css'
 import AnimeContext from './store/context';
 export default function AddTo(props) {
+  const [fav,setFav]=useState([]);
     const [isShow,setIsShow]=useState(-1);
     const ctx=useContext(AnimeContext);
    
@@ -15,13 +16,39 @@ export default function AddTo(props) {
         }
     }
     const watchHandler=(ani)=>{
-        ctx.addItem(ani);
+      alert('hi')
+      const upFav=[...fav,ani]
+      let array=[];
+      upFav.map((i)=>array.push(i.id))
+      setFav(upFav)
+     
+    //  localStorage.setItem('Favourite',JSON.stringify(array))
+      // localStorage.setItem('favItem'+(ani.id),JSON.stringify(ani))
+            // ctx.addItem(ani);
+
+     
     }
     const holdHandler=(ani)=>{
+      
+        const upFav=[...fav,ani]
+        let array=[];
+        upFav.map((i)=>array.push(i.id))
+        setFav(upFav)
         ctx.addHold(ani);
+            
+      //  localStorage.setItem('Favourite',JSON.stringify(array))
+      //   localStorage.setItem('favItem'+(ani.id),JSON.stringify(ani))
     }
     const removeHandler=(ani)=>{
-        ctx.removeItem(ani)
+      const filteredList=fav.filter((f)=>f.id!==ani.id);
+      let array=[];
+      filteredList.map((i)=>array.push(i.id))
+      setFav(filteredList)
+      
+      ctx.removeItem(ani)
+      localStorage.setItem('Favourite',JSON.stringify(array))
+      localStorage.removeItem('favItem'+(ani.id),JSON.stringify(ani))
+     
     }
   return (
     //onClick={()=>showHandler(ind)
